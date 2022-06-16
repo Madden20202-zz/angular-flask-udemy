@@ -2,16 +2,18 @@ export interface Deserializable {
     deserialize(input: any): this
 }
 
-export class PizzaOrder {
+export class PizzaOrder implements Deserializable {
 
-    size: String
-    crust: String
-    topping: String
+    public crust: String
+    public size: String
+    public toppings: String
 
-    deserialize(input: any) {
-        Object.assign(this, input) {
-            return this
-        }
+    deserialize(input: any): this {
+        return Object.assign(this, input)
     }
 
+    showPizzaOrder() {
+        return this.crust, this.size, this.toppings
+    }
+    
 }
