@@ -8,4 +8,10 @@ export class PizzaOrder {
     crust: String
     topping: String
 
+    deserialize(input: any) {
+        Object.assign(this, input) {
+            return this
+        }
+    }
+
 }
