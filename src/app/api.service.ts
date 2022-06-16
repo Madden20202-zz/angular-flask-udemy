@@ -9,6 +9,6 @@ export class ApiService {
   constructor(private http:HttpClient) { }
 
   getPizzaOrder() {
-    return this.http.get('')
+    return this.http.get('http:/127.0.0.1:500/orders')
   }
 }
