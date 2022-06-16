@@ -1,4 +1,4 @@
-export class PizzaOrder implements Deserializable {
+export class PizzaOrder {
 
     public crust: String
     public size: String
